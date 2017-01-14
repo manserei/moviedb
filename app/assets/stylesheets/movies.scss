@@ -48,19 +48,21 @@ ul.action-list {
 
   li {
     display: inline-block;
-    margin-right: 0.5em;
+    margin-right: 3px;
   }
 }
 
 a.button, button, input[type="submit"] {
   display: inline-block;
-  padding: 2px 10px 0px 10px;
+  padding: 2px 20px 0px 20px;
   cursor: pointer;
+  min-width: 70px;
 
   background-color: $color-link;
   color: white;
 
   text-decoration: none;
+  text-align: center;
   font: inherit;
   line-height: 2em;
 

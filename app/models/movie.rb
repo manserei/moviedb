@@ -12,8 +12,12 @@ class Movie < ApplicationRecord
   # Renders the full title of the movie, which is a concatenation
   # of its title and year (eg. "Star Wars (1978)")
   #
+  # Note: we're using `title_was` and `year_was` instead of `title`
+  # and `year` so we're still displaying the original data while the
+  # record is being edited.
+  #
   def full_title
-    "#{title} (#{year})"
+    "#{title_was} (#{year_was})"
   end
 
   # Overriding `to_param` is a cheap way to get the movie's title into

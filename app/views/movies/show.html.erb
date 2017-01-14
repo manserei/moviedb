@@ -1,5 +1,10 @@
 <h1><%= @movie.full_title %></h1>
 
+<ul class="action-list">
+  <li><%= link_to "Back", :movies, class: "button" %></li>
+  <li><%= link_to "Edit", [:edit, @movie], class: "button" %></li>
+</ul>
+
 <% if @movie.description.present? %>
   <h2>Description:</h2>
   <%= simple_format @movie.description %>
