@@ -1,0 +1,22 @@
+<%= form_for role do |f| %>
+  <div class="input">
+    <%= f.label :movie_id %>
+    <%= f.collection_select :movie_id, Movie.alphabetically.all,
+          :id, :full_title, include_blank: true %>
+  </div>
+
+  <div class="input">
+    <%= f.label :actor_id %>
+    <%= f.collection_select :actor_id, Actor.order(:first_name, :last_name).all,
+          :id, :full_name, include_blank: true %>
+  </div>
+
+  <div class="input">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <ul class="action-list">
+    <li><%= f.submit %></li>
+  </ul>
+<% end %>

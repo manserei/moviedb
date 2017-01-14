@@ -17,7 +17,7 @@ class MoviesController < ApplicationController
     if @movie.save
       redirect_to @movie
     else
-      render action: "new"
+      render "new"
     end
   end
 
@@ -31,7 +31,7 @@ class MoviesController < ApplicationController
     if @movie.update(movie_params)
       redirect_to @movie
     else
-      render action: "edit"
+      render "edit"
     end
   end
 

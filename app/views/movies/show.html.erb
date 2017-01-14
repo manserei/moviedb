@@ -2,6 +2,7 @@
 
 <ul class="action-list">
   <li><%= link_to "Edit", [:edit, @movie], class: "button" %></li>
+  <li><%= link_to "Add Role", new_role_path(role: { movie_id: @movie.id }), class: "button" %></li>
   <li><%= link_to "Delete", @movie, method: "delete", class: "button",
           data: { confirm: "Are you sure? There is no Undo." } %></li>
 </ul>

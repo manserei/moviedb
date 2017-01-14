@@ -17,7 +17,7 @@ class ActorsController < ApplicationController
     if @actor.save
       redirect_to @actor
     else
-      render action: "new"
+      render "new"
     end
   end
 
@@ -31,7 +31,7 @@ class ActorsController < ApplicationController
     if @actor.update(actor_params)
       redirect_to @actor
     else
-      render action: "edit"
+      render "edit"
     end
   end
 
