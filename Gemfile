@@ -51,6 +51,9 @@ group :development, :test do
 
   # Faker provides convenience methods to generate all kinds of random data.
   gem 'ffaker'
+
+  # Lovely Capybara will help us write feature/integration specs.
+  gem 'capybara'
 end
 
 group :development do
