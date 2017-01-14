@@ -13,10 +13,11 @@
 ActiveRecord::Schema.define(version: 20170114125410) do
 
   create_table "movies", force: :cascade do |t|
-    t.string   "title",      null: false
-    t.integer  "year",       null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "title",       null: false
+    t.integer  "year",        null: false
+    t.text     "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.index ["title", "year"], name: "index_movies_on_title_and_year", unique: true
   end
 

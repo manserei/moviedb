@@ -39,9 +39,18 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 
+  # RSpec is one of the most popular testing tools in the Ruby world.
   gem 'rspec-rails'
+
+  # FactoryGirl provides factory blueprints that help us easily generate records.
   gem 'factory_girl_rails'
+
+  # This provides some convenience functionality for controller tests that was
+  # extracted from Rails at some point.
   gem 'rails-controller-testing'
+
+  # Faker provides convenience methods to generate all kinds of random data.
+  gem 'ffaker'
 end
 
 group :development do
