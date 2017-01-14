@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+if Rails.env.development?
+  Movie.create! title: "Star Wars", year: 1978
+  Movie.create! title: "Star Trek: The Motion Picture", year: 1980
+  Movie.create! title: "Mad Max - Fury Road", year: 2015
+end
