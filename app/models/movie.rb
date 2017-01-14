@@ -15,4 +15,11 @@ class Movie < ApplicationRecord
   def full_title
     "#{title} (#{year})"
   end
+
+  # Overriding `to_param` is a cheap way to get the movie's title into
+  # its URL without having to store slugs in the database.
+  #
+  def to_param
+    "#{id}-#{title.parameterize}"
+  end
 end
