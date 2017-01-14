@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$color-link: crimson;
+
 body {
   background-color: white;
   color: #555;
@@ -20,14 +22,92 @@ h1 {
 
 h2, h3, h4, h5, h6 {
   font-size: inherit;
-  color: mediumorchid;
+  color: black;
+  margin: 2em 0 1em 0;
 }
 
 a {
-  color: crimson;
+  color: $color-link;
+}
+
+.error, .errors {
+  color: red;
+}
+
+%naked-list {
+  list-style: none;
+  padding-left: 0;
 }
 
 ul.movie-list {
-  list-style: none;
-  padding-left: 0;
+  @extend %naked-list;
+}
+
+ul.action-list {
+  @extend %naked-list;
+
+  li {
+    display: inline-block;
+    margin-right: 0.5em;
+  }
+}
+
+a.button, button, input[type="submit"] {
+  display: inline-block;
+  padding: 2px 10px 0px 10px;
+  cursor: pointer;
+
+  background-color: $color-link;
+  color: white;
+
+  text-decoration: none;
+  font: inherit;
+  line-height: 2em;
+
+  border: none;
+  border-radius: 2px;
+}
+
+
+/* forms */
+
+div.input {
+  margin: 1em 0;
+
+  label {
+    display: block;
+    font-weight: bold;
+  }
+
+  input, textarea {
+    font: inherit;
+    max-width: 600px;
+    width: 100%;
+    border: none;
+    background-color: #f2f2f2;
+    padding: 5px 8px;
+    border-radius: 2px;
+    border: 1px solid #f2f2f2;
+  }
+
+  .field_with_errors {
+    label {
+      color: red;
+    }
+    input, textarea {
+      border-color: red;
+    }
+  }
+
+  textarea {
+    height: 5em;
+  }
+
+  /* Rails automatically assigns IDs to form fields based on the
+     model and attribute that is being edited. We can use this to
+     selectively override styles for specific form fields. */
+
+  input#movie_title {
+    font-weight: bold;
+  }
 }

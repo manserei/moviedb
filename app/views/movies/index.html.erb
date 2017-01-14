@@ -1,4 +1,11 @@
-<h1>Movies</h1>
+<h1>MovieDB 2017</h1>
+
+<ul class="action-list">
+  <li><%= link_to "New Movie", :new_movie, class: "button" %></li>
+</ul>
+
+
+<h2>Movies:</h2>
 
 <ul class="movie-list">
   <% @movies.alphabetically.each do |movie| %>

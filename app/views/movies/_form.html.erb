@@ -1,0 +1,33 @@
+<% if movie.errors.any? %>
+<div class="errors">
+  <p><strong>Unfortunately there were some errors:</strong></p>
+
+  <ul>
+    <% movie.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+<%= form_for movie do |f| %>
+  <div class="input">
+    <%= f.label :title %>
+    <%= f.text_field :title, autofocus: true %>
+  </div>
+
+  <div class="input">
+    <%= f.label :year %>
+    <%= f.text_field :year %>
+  </div>
+
+  <div class="input">
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+
+  <ul class="action-list">
+    <li><%= f.submit %></li>
+    <li>or <%= link_to "cancel", :back %></li>
+  </ul>
+<% end %>
