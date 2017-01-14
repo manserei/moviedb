@@ -34,6 +34,23 @@ a {
   color: red;
 }
 
+nav[role="main"] {
+  color: grey;
+
+  ul.action-list li {
+    margin-right: 1em;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover {
+      border-bottom: 3px solid grey;
+    }
+  }
+}
+
 %naked-list {
   list-style: none;
   padding-left: 0;
@@ -70,10 +87,6 @@ a.button, button, input[type="submit"] {
   border-radius: 2px;
 }
 
-a.button-grey {
-  background-color: lightgrey;
-  color: #666;
-}
 
 /* forms */
 
