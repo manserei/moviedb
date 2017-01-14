@@ -1,3 +1,6 @@
 <h1><%= @movie.full_title %></h1>
 
-<%= simple_format @movie.description %>
+<% if @movie.description.present? %>
+  <h2>Description:</h2>
+  <%= simple_format @movie.description %>
+<% end %>
