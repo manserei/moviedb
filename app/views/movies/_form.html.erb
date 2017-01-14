@@ -13,7 +13,7 @@
 <%= form_for movie do |f| %>
   <div class="input">
     <%= f.label :title %>
-    <%= f.text_field :title, autofocus: true %>
+    <%= f.text_field :title, autofocus: true, placeholder: "eg. Star Wars" %>
   </div>
 
   <div class="input">
@@ -23,7 +23,7 @@
 
   <div class="input">
     <%= f.label :description %>
-    <%= f.text_area :description %>
+    <%= f.text_area :description, placeholder: "A summary of the plot." %>
   </div>
 
   <ul class="action-list">
