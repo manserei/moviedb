@@ -11,4 +11,7 @@ if Rails.env.development?
   FactoryGirl.create :movie, title: "Star Wars", year: 1978
   FactoryGirl.create :movie, title: "Star Trek: The Motion Picture", year: 1980
   FactoryGirl.create :movie, title: "Mad Max - Fury Road", year: 2015
+
+  # Generate a bunch of actors
+  FactoryGirl.create_list :actor, 50
 end

@@ -1,0 +1,43 @@
+<% if actor.errors.any? %>
+<div class="errors">
+  <p><strong>Unfortunately there were some errors:</strong></p>
+
+  <ul>
+    <% actor.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+<%= form_for actor do |f| %>
+  <div class="input">
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name %>
+  </div>
+
+  <div class="input">
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name %>
+  </div>
+
+  <div class="input">
+    <%= f.label :gender %>
+    <%= f.select :gender, [['Male', 'm'], ['Female', 'f']], include_blank: true %>
+  </div>
+
+  <div class="input">
+    <%= f.label :birthdate %>
+    <%= f.date_field :birthdate %>
+  </div>
+
+  <div class="input">
+    <%= f.label :biography %>
+    <%= f.text_area :biography %>
+  </div>
+
+  <ul class="action-list">
+    <li><%= f.submit %></li>
+    <li>or <%= link_to "cancel", :back %></li>
+  </ul>
+<% end %>

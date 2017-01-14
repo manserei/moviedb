@@ -1,0 +1,15 @@
+<h1>Actors</h1>
+
+<ul class="action-list">
+  <li><%= link_to "New Actor", :new_actor, class: "button" %></li>
+</ul>
+
+
+<% @actors.order(:first_name).group_by { |a| a.last_name.first.upcase }.each do |letter, actors| %>
+  <h2><%= letter %></h2>
+  <ul class="actor-list">
+    <% actors.each do |actor| %>
+      <li><%= link_to actor.full_name, actor %></li>
+    <% end %>
+  </ul>
+<% end %>

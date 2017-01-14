@@ -1,0 +1,21 @@
+<h1><%= @actor.full_name %></h1>
+
+<ul class="action-list">
+  <li><%= link_to "Edit", [:edit, @actor], class: "button" %></li>
+  <li><%= link_to "Delete", @actor, method: "delete", class: "button",
+          data: { confirm: "Are you sure? There is no Undo." } %></li>
+</ul>
+
+<h2>Gender:</h2>
+<%= full_gender(@actor.gender).capitalize %>
+
+<% if @actor.birthdate.present? %>
+  <h2>Birthdate:</h2>
+  <%= l @actor.birthdate, format: :long %>
+  (age: <%= @actor.age %>)
+<% end %>
+
+<% if @actor.biography.present? %>
+  <h2>Biography:</h2>
+  <%= simple_format @actor.biography %>
+<% end %>
