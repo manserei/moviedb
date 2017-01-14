@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :movie do
-    title "Star Wars"
-    year 1978
+    title { FFaker::Movie.title }
+    year { rand(1910..(Date.today.year)) }
     description { FFaker::Lorem.paragraphs(rand(1..2)).join("\n\n") }
   end
 end
