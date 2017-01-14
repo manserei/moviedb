@@ -1,5 +1,19 @@
 require 'rails_helper'
 
 RSpec.describe Movie, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  context "with valid attributes" do
+    let(:movie) { build :movie }
+
+    it "is valid" do
+      expect(movie).to be_valid
+    end
+  end
+
+  context "with missing title" do
+    let(:movie) { build :movie, title: nil }
+
+    it "is not valid" do
+      expect(movie).to_not be_valid
+    end
+  end
 end
