@@ -13,6 +13,20 @@ class RolesController < ApplicationController
     end
   end
 
+  def edit
+    @role = Role.find(params[:id])
+  end
+
+  def update
+    @role = Role.find(params[:id])
+
+    if @role.update(role_params)
+      redirect_to @role.movie
+    else
+      render "edit"
+    end
+  end
+
   def destroy
     @role = Role.find(params[:id])
     @role.destroy!
