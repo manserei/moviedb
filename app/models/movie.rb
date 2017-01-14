@@ -9,6 +9,12 @@ class Movie < ApplicationRecord
 
   scope :alphabetically, -> { order(:title) }
 
+  has_many :roles,
+    dependent: :destroy
+
+  has_many :actors,
+    through: :toles
+
   # Renders the full title of the movie, which is a concatenation
   # of its title and year (eg. "Star Wars (1978)")
   #

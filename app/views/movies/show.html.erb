@@ -10,3 +10,15 @@
   <h2>Description:</h2>
   <%= simple_format @movie.description %>
 <% end %>
+
+<% if @movie.roles.any? %>
+  <h2>Cast:</h2>
+  <ul>
+    <% @movie.roles.each do |role| %>
+    <li>
+      <%= link_to role.actor.full_name, role.actor %>
+      (as <strong><%= role.name %></strong>)
+    </li>
+    <% end %>
+  </ul>
+<% end %>

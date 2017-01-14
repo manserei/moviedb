@@ -19,3 +19,15 @@
   <h2>Biography:</h2>
   <%= simple_format @actor.biography %>
 <% end %>
+
+<% if @actor.roles.any? %>
+  <h2>Filmography:</h2>
+  <ul>
+    <% @actor.roles.each do |role| %>
+    <li>
+      <%= link_to role.movie.full_title, role.movie %>
+      (as <strong><%= role.name %></strong>)
+    </li>
+    <% end %>
+  </ul>
+<% end %>

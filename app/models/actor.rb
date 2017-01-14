@@ -15,6 +15,14 @@ class Actor < ApplicationRecord
     end
   end
 
+
+  has_many :roles,
+    dependent: :destroy
+
+  has_many :movies,
+    through: :toles
+
+
   def full_name
     "#{first_name_was} #{last_name_was}"
   end
@@ -28,5 +36,13 @@ class Actor < ApplicationRecord
       now = Date.today
       now.year - birthdate.year - ((now.month > birthdate.month || (now.month == birthdate.month && now.day >= birthdate.day)) ? 0 : 1)
     end
+  end
+
+  def male?
+    gender == "m"
+  end
+
+  def female?
+    gender == "f"
   end
 end
