@@ -18,6 +18,8 @@
     <li>
       <%= link_to role.actor.full_name, role.actor %>
       (as <strong><%= role.name %></strong>)
+
+      <%= link_to "delete", role, method: "delete" %>
     </li>
     <% end %>
   </ul>
