@@ -30,7 +30,17 @@ class RolesController < ApplicationController
   def destroy
     @role = Role.find(params[:id])
     @role.destroy!
-    redirect_to :back
+
+    # This controller action should react differently depending on the request
+    # format. When the HTML representation is requested, we will respond with a
+    # redirect back to the previous page; when the format is JS (= Ajax with
+    # remote: true), we want the default rendering to kick in (ie. rendering the
+    # destroy.js.* view.)
+    #
+    respond_to do |format|
+      format.html { redirect_to :back }
+      format.js   # No block given == default behavior
+    end
   end
 
   def role_params

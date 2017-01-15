@@ -1,4 +1,4 @@
-<li>
+<li id="role_<%= role.id %>">
   <% if show == :movie %>
     <%= link_to role.movie.full_title, role.movie %>
   <% else %>
@@ -7,5 +7,5 @@
   (as <strong><%= role.name %></strong>)
 
   <%= link_to fa_icon("edit"), [:edit, role] %>
-  <%= link_to fa_icon("trash"), role, method: "delete" %>
+  <%= link_to fa_icon("trash"), role, method: "delete", remote: true %>
 </li>
