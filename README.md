@@ -30,6 +30,9 @@ If you plan on sharing the changes you're going to make to this application, ple
 
 ## Suggested Exercises
 
+Here's a list of suggested exercises and discussions, roughly ordered by level of complexity.
+
+
 ### Discussion: List of Actors
 
 The way the [list of actors](https://github.com/mansworkshops/moviedb2017/blob/readme-update/app/views/actors/index.html.erb) (grouped by first letter of last name) is currently being rendered isn't terribly efficient. Why is this? How could this be optimized?
@@ -40,6 +43,16 @@ The way the [list of actors](https://github.com/mansworkshops/moviedb2017/blob/r
 Since we're already storing birthdates for actors, let's use this data to add a list of today's birthdays to the application's start page.
 
 Implement a spec that tests this.
+
+
+### Exercise: Extending the Movie model
+
+Extend the movie model with a new `language` attribute that stores the language the movie was recorded in.
+
+- Don't reuse the `create_movies` migration -- instead, generate a new one!
+- Amend all forms, specs and factories to use this new attribute.
+- Implement a validation that checks if the selected language is valid.
+- Use the [language_list](https://github.com/scsmith/language_list) gem if you need a full list of all languages.
 
 
 ### Exercise: Implement a new Resource
