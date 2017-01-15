@@ -39,7 +39,7 @@ We'll add a new "Genre" resource, representing a specific movie genre (eg. "Scie
 
 ### Exercise: Fetch and display movie posters
 
-Let's add movie posters to our app! Extend the Movie model to store an optional URL to a poster image. When saving a movie, try to find the URL of a movie poster image using a HTTP API, and save it to the model when found. 
+Let's add movie posters to our app! Extend the Movie model to store an optional URL to a poster image. When saving a movie, try to find the URL of a movie poster image using a HTTP API, and save it to the model when found.
 
 - Implement the code needed to perform this. (Hint: you'll want to set up an [ActiveRecord Callback](http://api.rubyonrails.org/classes/ActiveRecord/Callbacks.html). Which one fits our needs best?)
 - On a movie's detail page, when a poster is available, display it in an image tag. (Rails has an [image_tag](http://api.rubyonrails.org/classes/ActionView/Helpers/AssetTagHelper.html#method-i-image_tag) helper for this.)
@@ -54,10 +54,4 @@ Hints:
 
 
 
-[JBuilder]: https://github.com/rails/jbuilder
-[Capybara]: https://github.com/teamcapybara/capybara
-[Poltergeist]: https://github.com/teampoltergeist/poltergeist
-[DatabaseCleaner]: https://github.com/DatabaseCleaner/database_cleaner
-[FactoryGirl]: https://github.com/thoughtbot/factory_girl
-[FFaker]: https://github.com/ffaker/ffaker
 [HTTParty]: https://github.com/jnunemaker/httparty

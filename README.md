@@ -40,3 +40,12 @@ Please refer to [EXERCISES.md](EXERCISES.md) for a list of suggested exercises.
 I offer Ruby on Rails training and consulting in Germany and across Europe. If you're interested in learning Rails or getting your development team up to speed, please don't hesitate to email me at hendrik@mans.de.
 
 - _Hendrik Mans_
+
+
+
+[JBuilder]: https://github.com/rails/jbuilder
+[Capybara]: https://github.com/teamcapybara/capybara
+[Poltergeist]: https://github.com/teampoltergeist/poltergeist
+[DatabaseCleaner]: https://github.com/DatabaseCleaner/database_cleaner
+[FactoryGirl]: https://github.com/thoughtbot/factory_girl
+[FFaker]: https://github.com/ffaker/ffaker
