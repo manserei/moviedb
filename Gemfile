@@ -32,6 +32,11 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# FontAwesome provides a convenient icon font.
+# http://fontawesome.io/
+# https://github.com/bokmann/font-awesome-rails
+gem 'font-awesome-rails'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

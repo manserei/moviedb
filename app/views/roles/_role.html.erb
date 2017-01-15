@@ -6,6 +6,6 @@
   <% end %>
   (as <strong><%= role.name %></strong>)
 
-  <%= link_to "edit", [:edit, role] %>
-  <%= link_to "delete", role, method: "delete" %>
+  <%= link_to fa_icon("edit"), [:edit, role] %>
+  <%= link_to fa_icon("trash"), role, method: "delete" %>
 </li>
