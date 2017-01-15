@@ -16,7 +16,7 @@ class Movie < ApplicationRecord
     through: :toles
 
   # Renders the full title of the movie, which is a concatenation
-  # of its title and year (eg. "Star Wars (1978)")
+  # of its title and year (eg. "Star Wars (1977)")
   #
   # Note: we're using `title_was` and `year_was` instead of `title`
   # and `year` so we're still displaying the original data while the
