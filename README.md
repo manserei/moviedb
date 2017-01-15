@@ -39,7 +39,7 @@ If you plan on sharing the changes you're going to make to this application, ple
 
 ### Discussion: List of Actors
 
-The way the list of actors (grouped by first letter of last name) is currently being rendered isn't terribly efficient. Why is this? How could this be optimized?
+The way the [list of actors](https://github.com/mansworkshops/moviedb2017/blob/readme-update/app/views/actors/index.html.erb) (grouped by first letter of last name) is currently being rendered isn't terribly efficient. Why is this? How could this be optimized?
 
 
 ### Exercise: Display actor birthdays
