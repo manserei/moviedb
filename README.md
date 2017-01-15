@@ -47,5 +47,6 @@ I offer Ruby on Rails training and consulting in Germany and across Europe. If y
 [Capybara]: https://github.com/teamcapybara/capybara
 [Poltergeist]: https://github.com/teampoltergeist/poltergeist
 [DatabaseCleaner]: https://github.com/DatabaseCleaner/database_cleaner
+[RSpec]: http://rspec.info/
 [FactoryGirl]: https://github.com/thoughtbot/factory_girl
 [FFaker]: https://github.com/ffaker/ffaker
