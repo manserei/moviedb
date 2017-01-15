@@ -9,6 +9,16 @@ This is a custom Rails 5 exercise application for my **Ruby on Rails trainings**
 It is intended to be a base application to expand and experiment on, making use of Ruby on Rails' most important features and including some simple specs as a starting point.
 
 
+### Getting started:
+
+1. Install an up-to-date version of Ruby (minimum 2.2).
+2. Install Bundler: `gem install bundler`
+3. Clone this repository: `git clone https://github.com/mansworkshops/moviedb2017.git`
+4. Execute the `bin/setup` script.
+
+If you plan on sharing the changes you're going to make to this application, please consider forking this repository into your own GitHub account.
+
+
 ### Recommended reading:
 
 - The [Ruby on Rails Guides](http://guides.rubyonrails.org/) are full of useful information on building Ruby on Rails apps. Use these extensively!
