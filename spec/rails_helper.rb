@@ -11,6 +11,8 @@ require 'support/factory_girl'
 
 # Set up Capybara
 require 'capybara/rspec'
+require 'capybara/poltergeist'
+Capybara.javascript_driver = :poltergeist
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
@@ -38,7 +40,25 @@ RSpec.configure do |config|
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
   # instead of true.
-  config.use_transactional_fixtures = true
+  config.use_transactional_fixtures = false
+
+  # Since we are not using transactional fixtures, let's set up
+  # DatabaseCleaner to do the... database cleaning. Transactional fixtures
+  # are easily faster, and there is a way to configure this on a test-by-test
+  # basis that is a little more involved. Please refer to this URL for details:
+  #
+  # https://github.com/DatabaseCleaner/database_cleaner#rspec-with-capybara-example
+  #
+  config.before(:suite) do
+    DatabaseCleaner.strategy = :truncation
+    DatabaseCleaner.clean_with(:truncation)
+  end
+
+  config.around(:each) do |example|
+    DatabaseCleaner.cleaning do
+      example.run
+    end
+  end
 
   # RSpec Rails can automatically mix in different behaviours to your tests
   # based on their file location, for example enabling you to call `get` and
