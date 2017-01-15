@@ -27,13 +27,6 @@ If you plan on sharing the changes you're going to make to this application, ple
 - For tests, this app uses [RSpec] together with [FactoryGirl] (also see its [GETTING_STARTED.md](https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md)) and [FFaker].
 - [Capybara] is a framework for acceptance/feature/integration specs. This app uses it in conjunction with [Poltergeist] and [DatabaseCleaner].
 
-[JBuilder]: https://github.com/rails/jbuilder
-[Capybara]: https://github.com/teamcapybara/capybara
-[Poltergeist]: https://github.com/teampoltergeist/poltergeist
-[DatabaseCleaner]: https://github.com/DatabaseCleaner/database_cleaner
-[FactoryGirl]: https://github.com/thoughtbot/factory_girl
-[FFaker]: https://github.com/ffaker/ffaker
-
 
 ## Suggested Exercises
 
@@ -57,3 +50,26 @@ Implement a one-to-many relationship between genres and movies (ie. a movie shou
 
 Amend `spec/features/creating_a_movie_spec.rb` so it also adds a genre to the movie. Have it navigate to the genre detail page to test if the movie is now listed there.
 
+
+### Exercise: Movie Posters
+
+Let's add movie posters to our app! Extend the Movie model to store an optional URL to a poster image. When saving a movie, try to find the URL of a movie poster image using a HTTP API, and save it to the model when found. 
+
+Implement both a model and a feature spec that test this behaviour, _mocking the API request_.
+
+Hints:
+
+- The [OMDB API](https://www.omdbapi.com/) has an endpoint that returns movie data, including a poster image URL (see this [example request](http://www.omdbapi.com/?t=Rogue+One&y=2016&plot=short&r=json).)
+- [HTTParty] is a great gem for accessing remote APIs.
+- You can use RSpec's [built-in mocking functionality](https://www.relishapp.com/rspec/rspec-mocks/docs), but there are also some useful gems out there that specifically help with mocking and stubbing HTTP interactions, like [Webmock](https://github.com/bblimke/webmock) and [VCR](https://github.com/vcr/vcr).
+
+
+
+
+[JBuilder]: https://github.com/rails/jbuilder
+[Capybara]: https://github.com/teamcapybara/capybara
+[Poltergeist]: https://github.com/teampoltergeist/poltergeist
+[DatabaseCleaner]: https://github.com/DatabaseCleaner/database_cleaner
+[FactoryGirl]: https://github.com/thoughtbot/factory_girl
+[FFaker]: https://github.com/ffaker/ffaker
+[HTTParty]: https://github.com/jnunemaker/httparty
