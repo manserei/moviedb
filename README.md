@@ -1,5 +1,7 @@
 # Movie Database 2017
 
+![screenshot](http://i.imgur.com/8hUpazr.png)
+
 This is a custom Rails 5 exercise application for my **Ruby on Rails trainings**. It implements a simple **movie database** with three resources:
 
 - Movies
