@@ -15,14 +15,6 @@
 <% if @movie.roles.any? %>
   <h2>Cast:</h2>
   <ul>
-    <% @movie.roles.each do |role| %>
-    <li>
-      <%= link_to role.actor.full_name, role.actor %>
-      (as <strong><%= role.name %></strong>)
-
-      <%= link_to "edit", [:edit, role] %>
-      <%= link_to "delete", role, method: "delete" %>
-    </li>
-    <% end %>
+    <%= render @movie.roles, show: :actor %>
   </ul>
 <% end %>

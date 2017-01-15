@@ -1,0 +1,11 @@
+<li>
+  <% if show == :movie %>
+    <%= link_to role.movie.full_title, role.movie %>
+  <% else %>
+    <%= link_to role.actor.full_name, role.actor %>
+  <% end %>
+  (as <strong><%= role.name %></strong>)
+
+  <%= link_to "edit", [:edit, role] %>
+  <%= link_to "delete", role, method: "delete" %>
+</li>
