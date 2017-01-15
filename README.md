@@ -9,7 +9,7 @@ This is a custom Rails 5 exercise application for my **Ruby on Rails trainings**
 It is intended to be a base application to expand and experiment on, making use of Ruby on Rails' most important features and including some simple specs as a starting point.
 
 
-### Getting started:
+### Getting started
 
 1. Install an up-to-date version of Ruby (minimum 2.2).
 2. Install Bundler: `gem install bundler`
@@ -19,7 +19,7 @@ It is intended to be a base application to expand and experiment on, making use 
 If you plan on sharing the changes you're going to make to this application, please consider forking this repository into your own GitHub account.
 
 
-### Recommended reading:
+### Recommended reading
 
 - The [Ruby on Rails Guides](http://guides.rubyonrails.org/) are full of useful information on building Ruby on Rails apps. Use these extensively!
 - The [Ruby on Rails API Reference](http://api.rubyonrails.org/) documents each and every class and method available in Ruby on Rails.
@@ -37,19 +37,19 @@ If you plan on sharing the changes you're going to make to this application, ple
 
 ## Suggested Exercises
 
-#### Discussion: List of Actors
+### Discussion: List of Actors
 
 The way the list of actors (grouped by first letter of last name) is currently being rendered isn't terribly efficient. Why is this? How could this be optimized?
 
 
-#### Exercise: Display actor birthdays
+### Exercise: Display actor birthdays
 
 Since we're already storing birthdates for actors, let's use this data to add a list of today's birthdays to the application's start page.
 
 Implement a spec that tests this.
 
 
-#### Exercise: Implement a new Resource
+### Exercise: Implement a new Resource
 
 Implement a new "Genre" resource, representing a specific movie genre (eg. "Science Fiction", "Drama", "Fantasy", ...). Implement this as a full RESTful resource.
 
