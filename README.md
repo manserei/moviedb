@@ -2,11 +2,11 @@
 
 This is a custom Rails 5 exercise application for my **Ruby on Rails trainings**. It implements a simple **movie database** with three resources:
 
-- Movies
-- Actors
-- Roles, linking movies and actors together.
+- Movies (eg. "Star Wars")
+- Actors (eg. "Harrison Ford")
+- Roles, linking movies and actors together (eg. "Han Solo")
 
-It is intended to be a base application to expand and experiment on.
+It is intended to be a base application to expand and experiment on, making use of Ruby on Rails' most important features and including some simple specs as a starting point.
 
 
 ### Recommended reading:
