@@ -51,6 +51,10 @@ nav[role="main"] {
       border-bottom: 3px solid grey;
     }
   }
+
+  li:first-child {
+    color: black;
+  }
 }
 
 %naked-list {
