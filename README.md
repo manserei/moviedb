@@ -42,7 +42,8 @@ The way the [list of actors](https://github.com/mansworkshops/moviedb2017/blob/r
 
 Since we're already storing birthdates for actors, let's use this data to add a list of today's birthdays to the application's start page.
 
-Implement a spec that tests this.
+- Display list of today's birthdays on application start page.
+- Implement a spec that tests this.
 
 
 ### Exercise: Extending the Movie model
@@ -57,18 +58,22 @@ Extend the movie model with a new `language` attribute that stores the language 
 
 ### Exercise: Implement a new Resource
 
-Implement a new "Genre" resource, representing a specific movie genre (eg. "Science Fiction", "Drama", "Fantasy", ...). Implement this as a full RESTful resource.
+We'll add a new "Genre" resource, representing a specific movie genre (eg. "Science Fiction", "Drama", "Fantasy", and so on).
 
-Implement a one-to-many relationship between genres and movies (ie. a movie should only ever have one genre.) On the movie detail page, display its genre, when available; on the detail page for a genre, list all the movies belonging to the genre.
-
-Amend `spec/features/creating_a_movie_spec.rb` so it also adds a genre to the movie. Have it navigate to the genre detail page to test if the movie is now listed there.
+- Implement this as a full RESTful resource.
+- Implement a one-to-many relationship between genres and movies (ie. a movie should only ever have one genre.)
+- On the movie detail page, display its genre, when available.
+- On the detail page for a genre, list all the movies belonging to the genre.
+- Amend `spec/features/creating_a_movie_spec.rb` so it also adds a genre to the movie. Have it navigate to the genre detail page to test if the movie is now listed there.
 
 
 ### Exercise: Movie Posters
 
 Let's add movie posters to our app! Extend the Movie model to store an optional URL to a poster image. When saving a movie, try to find the URL of a movie poster image using a HTTP API, and save it to the model when found. 
 
-Implement both a model and a feature spec that test this behaviour, _mocking the API request_.
+- Implement the code needed to perform this. (Hint: you'll want to set up an [ActiveRecord Callback](http://api.rubyonrails.org/classes/ActiveRecord/Callbacks.html). Which one fits our needs best?)
+- On a movie's detail page, when a poster is available, display it in an image tag. (Rails has an [image_tag](http://api.rubyonrails.org/classes/ActionView/Helpers/AssetTagHelper.html#method-i-image_tag) helper for this.)
+- Implement both a model and a feature spec that test this behaviour, _mocking the API request_.
 
 Hints:
 
