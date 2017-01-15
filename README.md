@@ -46,7 +46,7 @@ Since we're already storing birthdates for actors, let's use this data to add a 
 - Implement a spec that tests this.
 
 
-### Exercise: Extending the Movie model
+### Exercise: Extend the Movie model
 
 Extend the movie model with a new `language` attribute that stores the language the movie was recorded in.
 
@@ -67,7 +67,7 @@ We'll add a new "Genre" resource, representing a specific movie genre (eg. "Scie
 - Amend `spec/features/creating_a_movie_spec.rb` so it also adds a genre to the movie. Have it navigate to the genre detail page to test if the movie is now listed there.
 
 
-### Exercise: Movie Posters
+### Exercise: Fetch and display movie posters
 
 Let's add movie posters to our app! Extend the Movie model to store an optional URL to a poster image. When saving a movie, try to find the URL of a movie poster image using a HTTP API, and save it to the model when found. 
 
