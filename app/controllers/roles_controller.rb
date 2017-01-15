@@ -37,8 +37,8 @@ class RolesController < ApplicationController
     # remote: true), we want the default rendering to kick in (ie. rendering the
     # destroy.js.* view.)
     #
-    respond_to do |format|
-      format.html { redirect_to :back }
+        respond_to do |format|
+      format.html { redirect_back(fallback_location: "/") }
       format.js   # No block given == default behavior
     end
   end
