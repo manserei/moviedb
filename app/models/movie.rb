@@ -13,7 +13,7 @@ class Movie < ApplicationRecord
     dependent: :destroy
 
   has_many :actors,
-    through: :toles
+    through: :roles
 
   # Renders the full title of the movie, which is a concatenation
   # of its title and year (eg. "Star Wars (1977)")
