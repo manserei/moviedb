@@ -68,6 +68,8 @@ group :development, :test do
   # transactional fixtures behavior and clean the database ourselves. We'll
   # use DatabaseCleaner to help us with that.
   gem 'database_cleaner'
+
+  gem 'rubocop', require: false
 end
 
 group :development do
