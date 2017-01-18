@@ -30,11 +30,6 @@ If you plan on sharing the changes you're going to make to this application, ple
 - [Capybara] is a framework for acceptance/feature/integration specs. This app uses it in conjunction with [Poltergeist] and [DatabaseCleaner].
 
 
-### Suggested Exercises
-
-Please refer to [EXERCISES.md](EXERCISES.md) for a list of suggested exercises.
-
-
 ### Interested in training?
 
 I offer Ruby on Rails training and consulting in Germany and across Europe. If you're interested in learning Rails or getting your development team up to speed, please don't hesitate to email me at hendrik@mans.de.
