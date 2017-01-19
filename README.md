@@ -1,4 +1,4 @@
-# Movie Database 2017
+# Movie Database 2017 \o/
 
 [![Build Status](https://travis-ci.org/mansworkshops/moviedb2017.svg?branch=master)](https://travis-ci.org/mansworkshops/moviedb2017)
 
