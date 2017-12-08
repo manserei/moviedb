@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :actor do
     gender { ["m", "f"].sample }
     first_name { gender == "m" ? FFaker::Name.first_name_male : FFaker::Name.first_name_female }

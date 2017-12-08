@@ -10,13 +10,13 @@
 if Rails.env.development?
   # Create a bunch of movies
   puts "Creating movies..."
-  FactoryGirl.create_list :movie, 50
+  FactoryBot.create_list :movie, 50
 
   # Generate a bunch of actors
   puts "Creating actors..."
-  FactoryGirl.create_list :actor, 50
+  FactoryBot.create_list :actor, 50
 
   # Now assign random actors to random movies!
   puts "Creating roles..."
-  FactoryGirl.create_list :role, 200
+  FactoryBot.create_list :role, 200
 end

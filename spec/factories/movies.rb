@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :movie do
     title { FFaker::Movie.title }
     year { rand(1910..(Date.today.year)) }

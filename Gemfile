@@ -48,8 +48,8 @@ group :development, :test do
   # RSpec is one of the most popular testing tools in the Ruby world.
   gem 'rspec-rails'
 
-  # FactoryGirl provides factory blueprints that help us easily generate records.
-  gem 'factory_girl_rails'
+  # FactoryBot provides factory blueprints that help us easily generate records.
+  gem 'factory_bot_rails'
 
   # This provides some convenience functionality for controller tests that was
   # extracted from Rails at some point.
