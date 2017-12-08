@@ -59,9 +59,8 @@ group :development, :test do
   # Lovely Capybara will help us write feature/integration specs.
   gem 'capybara'
 
-  # Poltergeist is a Capybara driver for PhantomJS. We'll use both for
-  # "JS-enabled" feature specs.
-  gem 'poltergeist'
+  # We'll use headless Chrome (through Selenium) for browser-based feature specs.
+  gem 'selenium-webdriver'
 
   # Since we perform some Capybara "js" tests, we need to disable Rails' default
   # transactional fixtures behavior and clean the database ourselves. We'll
