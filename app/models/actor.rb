@@ -20,7 +20,7 @@ class Actor < ApplicationRecord
     dependent: :destroy
 
   has_many :movies,
-    through: :toles
+    through: :roles
 
 
   def full_name
