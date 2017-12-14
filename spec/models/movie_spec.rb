@@ -5,6 +5,7 @@ RSpec.describe Movie, type: :model do
     let(:movie) { build :movie }
 
     it "is valid" do
+      # assert movie.valid?
       expect(movie).to be_valid
     end
   end
