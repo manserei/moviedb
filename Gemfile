@@ -61,11 +61,6 @@ group :development, :test do
 
   # We'll use headless Chrome (through Selenium) for browser-based feature specs.
   gem 'selenium-webdriver'
-
-  # Since we perform some Capybara "js" tests, we need to disable Rails' default
-  # transactional fixtures behavior and clean the database ourselves. We'll
-  # use DatabaseCleaner to help us with that.
-  gem 'database_cleaner'
 end
 
 group :development do
