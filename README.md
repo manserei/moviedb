@@ -27,7 +27,7 @@ If you plan on sharing the changes you're going to make to this application, ple
 - The [Ruby on Rails API Reference](http://api.rubyonrails.org/) documents each and every class and method available in Ruby on Rails.
 - The [JBuilder] gem is used to generate JSON responses.
 - For tests, this app uses [RSpec] together with [FactoryBot] (also see its [GETTING_STARTED.md](https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md)) and [FFaker].
-- [Capybara] is a framework for acceptance/feature/integration specs. This app uses it in conjunction with [Poltergeist] and [DatabaseCleaner].
+- [Capybara] is a framework for acceptance/feature/integration specs. This app uses it in conjunction with [Headless Chrome].
 
 
 ### Interested in training?
@@ -40,8 +40,7 @@ I offer Ruby on Rails training and consulting in Germany and across Europe. If y
 
 [JBuilder]: https://github.com/rails/jbuilder
 [Capybara]: https://github.com/teamcapybara/capybara
-[Poltergeist]: https://github.com/teampoltergeist/poltergeist
-[DatabaseCleaner]: https://github.com/DatabaseCleaner/database_cleaner
+[Headless Chrome]: https://robots.thoughtbot.com/headless-feature-specs-with-chrome
 [RSpec]: http://rspec.info/
 [FactoryBot]: https://github.com/thoughtbot/factory_girl
 [FFaker]: https://github.com/ffaker/ffaker
