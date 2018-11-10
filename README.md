@@ -1,7 +1,5 @@
 # Movie Database 2017 \o/
 
-[![Build Status](https://travis-ci.org/mansworkshops/moviedb2017.svg?branch=master)](https://travis-ci.org/mansworkshops/moviedb2017)
-
 This is a custom Rails 5 exercise application for my **Ruby on Rails trainings**. It implements a simple **movie database** with three resources:
 
 - Movies (eg. "Star Wars")
