@@ -10,16 +10,15 @@ This is a custom Rails 5 exercise application for my **Ruby on Rails trainings**
 
 It is intended to be a base application to expand and experiment on, making use of Ruby on Rails' most important features and including some simple specs as a starting point.
 
-
 ### Getting started
 
-1. Install an up-to-date version of Ruby (minimum 2.2).
-2. Install Bundler: `gem install bundler`
-3. Clone this repository: `git clone https://github.com/mansworkshops/moviedb2017.git`
-4. Execute the `bin/setup` script.
+1.  Install an up-to-date version of Ruby (2.5.x recommended.)
+2.  Install Bundler: `gem install bundler`
+3.  Clone this repository: `git clone https://github.com/mansworkshops/moviedb2017.git`
+4.  macOS only: install Homebrew dependencies via `brew bundle`.
+5.  Execute the `bin/setup` script.
 
 If you plan on sharing the changes you're going to make to this application, please consider forking this repository into your own GitHub account.
-
 
 ### Recommended reading
 
@@ -29,18 +28,15 @@ If you plan on sharing the changes you're going to make to this application, ple
 - For tests, this app uses [RSpec] together with [FactoryBot] (also see its [GETTING_STARTED.md](https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md)) and [FFaker].
 - [Capybara] is a framework for acceptance/feature/integration specs. This app uses it in conjunction with [Headless Chrome].
 
-
 ### Interested in training?
 
 I offer Ruby on Rails training and consulting in Germany and across Europe. If you're interested in learning Rails or getting your development team up to speed, please don't hesitate to email me at hendrik@mans.de.
 
 - _Hendrik Mans_
 
-
-
-[JBuilder]: https://github.com/rails/jbuilder
-[Capybara]: https://github.com/teamcapybara/capybara
-[Headless Chrome]: https://robots.thoughtbot.com/headless-feature-specs-with-chrome
-[RSpec]: http://rspec.info/
-[FactoryBot]: https://github.com/thoughtbot/factory_girl
-[FFaker]: https://github.com/ffaker/ffaker
+[jbuilder]: https://github.com/rails/jbuilder
+[capybara]: https://github.com/teamcapybara/capybara
+[headless chrome]: https://robots.thoughtbot.com/headless-feature-specs-with-chrome
+[rspec]: http://rspec.info/
+[factorybot]: https://github.com/thoughtbot/factory_girl
+[ffaker]: https://github.com/ffaker/ffaker
