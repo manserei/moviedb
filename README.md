@@ -1,6 +1,6 @@
-# Movie Database 2017 \o/
+# Movie Database
 
-This is a custom Rails 5 exercise application for my **Ruby on Rails trainings**. It implements a simple **movie database** with three resources:
+This is a custom Rails 5 exercise application used in my **Ruby on Rails trainings**. It implements a simple **movie database** with three resources:
 
 - Movies (eg. "Star Wars")
 - Actors (eg. "Harrison Ford")
@@ -12,7 +12,7 @@ It is intended to be a base application to expand and experiment on, making use 
 
 1.  Install an up-to-date version of Ruby (2.5.x recommended.)
 2.  Install Bundler: `gem install bundler`
-3.  Clone this repository: `git clone https://github.com/mansworkshops/moviedb2017.git`
+3.  Clone this repository: `git clone https://github.com/manserei/moviedb.git`
 4.  macOS only: install Homebrew dependencies via `brew bundle`.
 5.  Execute the `bin/setup` script.
 
