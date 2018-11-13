@@ -16,6 +16,8 @@ It is intended to be a base application to expand and experiment on, making use 
 4.  macOS only: install Homebrew dependencies via `brew bundle`.
 5.  Execute the `bin/setup` script.
 
+**Bonus step:** if you want the automatic poster fetching to work, you'll need to get a free API key for [omdbapi.com](http://www.omdbapi.com/) and provide it to the application by way of the `OMDB_API_KEY` environment variable.
+
 If you plan on sharing the changes you're going to make to this application, please consider forking this repository into your own GitHub account.
 
 ### Recommended reading
