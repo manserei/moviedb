@@ -15,6 +15,10 @@ class Movie < ApplicationRecord
   has_many :actors,
     through: :roles
 
+  # Poster Fetching
+  attr_accessor :skip_poster_fetcher
+  before_save :fetch_movie_poster, unless: :skip_poster_fetcher
+
   # Renders the full title of the movie, which is a concatenation
   # of its title and year (eg. "Star Wars (1977)")
   #
@@ -31,5 +35,10 @@ class Movie < ApplicationRecord
   #
   def to_param
     "#{id}-#{title.parameterize}"
+  end
+
+  # Try and fetch a movie poster through the PosterFetcher service.
+  def fetch_movie_poster
+    self.poster_url = PosterFetcher.call(title)
   end
 end

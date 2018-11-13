@@ -6,6 +6,9 @@ git_source(:github) do |repo_name|
 end
 
 
+# dotenv allows us to place environment variables in .env files.
+gem 'dotenv-rails', groups: [:development, :test]
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
 # Bootsnap for faster application bootup time
@@ -35,6 +38,10 @@ gem 'jbuilder', '~> 2.5'
 # https://github.com/bokmann/font-awesome-rails
 gem 'font-awesome-rails'
 
+# We're accessing an external API for movie posters, and we're
+# using HTTParty as the client.
+gem 'httparty'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -63,6 +70,10 @@ group :development, :test do
 
   # We'll use headless Chrome (through Selenium) for browser-based feature specs.
   gem 'selenium-webdriver'
+
+  # webmock will prevent actual HTTP requests to external sites to be
+  # executed during testing, and instead allow us to stub or mock them.
+  gem 'webmock'
 end
 
 group :development do

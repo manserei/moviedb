@@ -7,6 +7,10 @@
           data: { confirm: "Are you sure? There is no Undo." } %></li>
 </ul>
 
+<% if @movie.poster_url.present? %>
+  <%= image_tag @movie.poster_url  %>
+<% end %>
+
 <% if @movie.description.present? %>
   <h2>Description:</h2>
   <%= simple_format @movie.description %>
